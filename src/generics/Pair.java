@@ -1,5 +1,8 @@
 package generics;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Pair <T, V> {
     T a;
     V b;
@@ -21,4 +24,20 @@ public class Pair <T, V> {
     V getB(){
         return this.b;
     }
+
+    //static methods
+    static <E> void PrintRadius(E radius){
+        System.out.println("Radius given :" + radius);
+    }
+    static <E> E ReturnRadius(E radius){
+        return radius;
+    }
+
+    static <E> List<E> FindCircleAriaOfGeneric(E radius){
+        List<E> list = new ArrayList<E>();
+        list.add(radius);
+        return list;
+    }
+
+
 }
