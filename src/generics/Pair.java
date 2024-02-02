@@ -38,6 +38,11 @@ public class Pair <T, V> {
         list.add(radius);
         return list;
     }
+    static <E extends  Number> double ReturnCircleAriaOfGeneric(E radius){
+        return radius.floatValue() * radius.floatValue();
+    }
+
+
 
 
 }
